@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>
+        {{ card.business.name }}
+    </h1>
+
+    <h2>
+        Loyalty Card
+    </h2>
+
+
+    <p>
+    {% for i in range(10) %}
+
+        {% if i < card.stamps %}
+            ☕
+        {% else %}
+            ○
+        {% endif %}
+
+    {% endfor %}
+    </p>
+
+
+    <h3>
+        {{ card.stamps }} / 10 stamps
+    </h3>
+
+
+    <p>
+        {{ card.business.reward }}
+    </p>
+
+
+    <small>
+        Card ID:
+        {{ card.id }}
+    </small>
+
+</div>
+
+</body>
+
+</html>

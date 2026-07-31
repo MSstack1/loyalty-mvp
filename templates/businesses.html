@@ -1,0 +1,23 @@
+<h1>Businesses</h1>
+
+
+{% for business in businesses %}
+
+<h2>
+{{ business.name }}
+</h2>
+
+<p>
+{{ business.reward }}
+</p>
+
+
+<img 
+src="/business/{{ business.id }}/qr"
+width="200"
+>
+
+
+<hr>
+
+{% endfor %}
