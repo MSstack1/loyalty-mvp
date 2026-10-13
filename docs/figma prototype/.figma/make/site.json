@@ -1,0 +1,10 @@
+{
+  "description": "Enables small businesses to create custom digital stamp cards for customers to add to Apple Wallet, simplifying loyalty program management and rewards.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
